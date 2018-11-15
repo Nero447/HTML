@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.container{
+				display:grid;
+				grid-template-columns:repeat(3,10%);
+				grid-template-rows:100px;
+				grid-column-gap:10px;
+				grid-row-gap:20px;
+			}
+			.large{
+				grid-column-start:2;
+				grid-column-end:4;
+			}
+			.large2{
+				grid-row-start:1;
+				grid-row-end:3;
+			}
+			.row{
+				outline:1px solid red;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row large2">1</div>
+			<div class="row large">2</div>
+			<div class="row">3</div>
+			<div class="row">4</div>
+			<div class="row">5</div>
+		</div>
+	</body>
+</html>
