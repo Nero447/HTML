@@ -1,0 +1,49 @@
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4, 60px);
+		grid-template-rows: repeat(7, 60px);
+				
+	}
+	.row {
+		outline: 1px solid black;
+		text-align: center;
+		font-size: 30px;
+		line-height: 60px;
+	}
+	.guzik0 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+				
+		text-align:left;
+	}
+	.orange {
+	background-color: cyan;
+	color: white;
+			
+	}
+			.grey {
+			background-color: purple;
+			
+			}
+			.wynik {
+				grid-column-start: 1;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				background-color: black;
+				color: white;
+				text-align: right;
+				
+			}
+		
+			 
+			.zero {
+				position:relative;
+				left: 25px;
+			}
+			.kek {
+				position: relative;
+				right: 10px;
+				top: 55px;
+			}
