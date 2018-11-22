@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset=UTF-8>
+		<style>
+			.container {
+				display: grid;
+				grid-template-columns: repeat(4, 60px);
+				grid-template-rows: repeat(7, 60px);
+				
+			}
+			.row {
+				outline: 1px solid black;
+				text-align: center;
+				font-size: 30px;
+				line-height: 60px;
+			}
+			.guzik0 {
+				grid-column-start: 1;
+				grid-column-end: 3;
+				
+				text-align:left;
+			}
+			.orange {
+			background-color: orange;
+			color: white;
+			
+			}
+			.grey {
+			background-color: grey;
+			
+			}
+			.wynik {
+				grid-column-start: 1;
+				grid-column-end: 5;
+				grid-row-start: 1;
+				grid-row-end: 3;
+				background-color: black;
+				color: white;
+				text-align: right;
+				
+			}
+		
+			} 
+			.zero {
+				position:relative;
+				left: 25px;
+			}
+			.kek {
+				position: relative;
+				right: 10px;
+				top: 55px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row wynik">
+				<div class="kek">09.11</div>
+			</div>
+			<div class="row grey">C</div>
+			<div class="row grey">%</div>
+			<div class="row grey">←</div>
+			<div class="row orange">:</div>
+			<div class="row grey">7</div>
+			<div class="row grey">8</div>
+			<div class="row grey">9</div>
+			<div class="row orange">x</div>
+			<div class="row grey">4</div>
+			<div class="row grey">5</div>
+			<div class="row grey">6</div>
+			<div class="row orange">-</div>
+			<div class="row grey">1</div>
+			<div class="row grey">2</div>
+			<div class="row grey">3</div>
+			<div class="row orange">+</div>
+			<div class="row guzik0 grey">
+				<div class="zero">0</div>
+			</div>
+			<div class="row grey">.</div>
+			<div class="row orange">=</div>
+		</div>
+	</body>
+</html>
+
