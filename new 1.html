@@ -1,42 +1,89 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset=utf-8>
+		<style>
+			@keyframes zmiana_kolotu {
+			0%,100% {
+			background-color:green
+			}
+			50% {
+			background-color:darkgreen
+			}
+			
+			}
+			.rectangle {
+			
+				  position:relative;
+				  border: 5px solid black;
+				  width: 200px;
+				  height: 200px;
+				  background: green;
+				  top: 20px;
+				  z-index: 11;
+				  border-bottom: 0;
+				  
+				  
+			}
+			.rectangle2 {
+			
+				  position:relative;
+				  border: 5px solid black;
+				  width: 200px;
+				  height: 200px;
+				  background: red;
+				  bottom: 90px;
+				  z-index: 9;
+				  border-bottom: 0;
+				  }
+			.oval {
+			position:relative;
+			border: 5px solid black;
+				  width: 200px;
+				  height: 100px;
+				  background: grey;
+				  border-radius: 100px / 50px;
+				  top: 75px;
+				  z-index: 12
+			}
+			.oval2 {
+			position:relative;
+			border: 5px solid black;
+				  width: 200px;
+				  height: 100px;
+				  background: red;
+				  border-radius: 100px / 50px;
+				  bottom: 140px;
+				  
+			}
+			.oval3 {
+			position:relative;		
+			border: 5px solid black;
+				  width: 200px;
+				  height: 100px;
+				  background: green;
+				  border-radius: 100px / 50px;
+				  bottom: 25px;
+				  z-index: 10;
+	}
+
+			.tree {
+				position:relative;
+				width:200px;
+				height:190px;
+			}
+
+
+		</style>
 	</head>
-	<body>
-		<!-- blok h1 -->
-		<h1> 
-			<p align=center> 
-				<font color="red"> 
-					<b> MOŻLIWOŚCI UZYSKIWANIA DODATKOWYCH KWALIFIKACJI <br>
-					W ZAWODACH W RAMACH OBSZARU KSZTAŁCENIA OKREŚLONEGO <br>
-					W KLASYFIKACJI ZAWODÓW SZKOLNICTWA ZAWODOWEGO </b> 
-				</font> 
-			</p>
-		</h1>
-		
-		<h3 align=center>
-			Absolwent szkoły kształcącej w zawodzie <b><u>technik informatyk</u></b> po potwierdzeniu kwalifikacji: 
-		</h3>
-		<ul type="none" align=center> 
-			<li><b>E.12.</b><!-- 
-			--><i>Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych,</i></li>
-			<li><b>E.13.</b><!--
-			--><i>Projektowanie lokalnych sieci komputerowych i administrowanie sieciami</i> i</li>
-			<li><b>E.14.</b><!--
-			--><i>Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami</i></li>
-		</ul>
-		<h3 align=center>
-		może uzyskać dyplom potwierdzający kwalifikacje w zawodzie <b><u>technik teleinformatyk</u></b>, po <br>
-		potwierdzeniu kwalifikacji:
-		</h3>
-		<ul type="none" align=center>
-			<li><b>E.15.</b><!--
-			--><i>Uruchamianie oraz utrzymanie terminali i przyłączy abonenckich</i> i</li>
-			<li><b>E.16.</b><!--
-			--><i>Montaż i eksploatacja sieci rozległych.</i></li>
-		<p allign=center>
-			<font color="blue">&copy <abbr title="Wydawnictwa Szkolne i Pedagogiczne">WSiP</abbr>		
-		</p>
-	</body>
 	
+	<body>
+		<div class="tree">
+			<div class="oval"></div>
+			<div class="rectangle"></div>
+			<div class="oval3"></div>
+			<div class="rectangle2"></div>
+			<div class="oval2"></div>
+		</div>
+
+	</body>
+</html>
