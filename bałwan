@@ -96,6 +96,7 @@
       border-radius: 50%;
     }
   </style>
+  </head>
 <body>
   <div class="container1">
     <div class="container2">
@@ -116,4 +117,4 @@
     </div>
   </div>
 </body>
-
+</html>
