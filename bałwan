@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    .container1 {
+      background-color:#BFF3F8;
+      width: 750px;
+      height: 500px;
+      margin: auto;
+      margin-top: 5%;
+      position: relative;
+    }
+    .container2 {
+      width: 25%;
+      height: 80%;
+      margin: auto;
+      margin-top: 7.5%;
+      position: relative;
+    }
+    .cylinder {
+      width: 75%;
+      height: 20%;
+      margin: auto;
+      position: relative;
+    }
+
+    .cylinder2 {
+      background-color: black;
+      width: 100%;
+      height: 25%;
+      margin: auto;
+      position: absolute;
+      bottom: -20%;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .cylinder3 {
+      background-color: black;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      position: relative;
+    }
+
+    .pasek {
+      background-color: red;
+      width: 100%;
+      height: 25%;
+      margin: auto;
+      position: relative;
+      bottom: -75%;
+    }
+    .glowa {
+      background-color: white;
+      width: 50%;
+      height: 25%;
+      margin: auto;
+      position: relative;
+      border-radius: 50%;
+    }
+    .oczy {
+      background-color: black;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: 35%;
+    }
+
+    .lewe{
+      left: 20%;
+    }
+
+    .prawe {
+      right: 20%;
+    }
+    .marchewa {
+      width: 0;
+      height: 0;
+      margin: auto;
+      margin-left: 50%;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 25px solid orange;
+      border-radius: 50% 0%;
+      position: relative;
+      top: 50%;
+      transform: rotate(90deg);
+    }
+     .tulow {
+      background-color: white;
+      width: 100%;
+      height: 50%;
+      margin: auto;
+      position: relative;
+      border-radius: 50%;
+    }
+  </style>
+<body>
+  <div class="container1">
+    <div class="container2">
+      <div class="cylinder">
+        <div class="cylinder2"></div>
+        <div class="cylinder3">
+        <div class="pasek"></div>
+        </div>
+      </div>
+      <div class="glowa">
+        <div class="oczy" class="lewe"></div>
+        <div class="oczy" class="prawe"></div>
+        <div class="marchewa"></div>
+      </div>
+      <div class="tulow">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
