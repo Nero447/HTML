@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+		 header {
+            height: 200px;
+            background-color: 255, 218, 65;
+            background-image: url('menu.jpg');
+            background-size: 400px;
+            background-repeat: repeat-x;
+            padding: 10px;
+			}
+          header, .content * {
+              padding: 1em;
+          }
+          .container {
+            display: flex;
+            flex-direction: column;
+          }
+
+          header {
+              
+              background-color: yellow
+          }
+		footer {
+              
+              background-color: rgb(255, 218, 65);
+			  
+          }
+          .content {
+              display:flex;
+              ;
+          }
+          .container div, header, footer {
+              box-sizing: border-box;
+          }
+                    
+          section {
+              flex-grow: 1;
+			  background-color: rgb(255, 218, 65);
+			  height: 400px;
+			  width: 40%;
+			  
+          }
+
+          nav {
+              background-color: rgb(255, 233, 143);
+			  height: 400px;
+			  width: 30%;
+          }
+
+          aside {
+              background-color: rgb(255, 226, 100);
+			  height: 400px;
+			  width: 30%;
+          }
+        </style>
+		<title>Restauracja Kulinaria.pl</title>
+    </head>
+    <body>
+        <div class="container">
+            <header><font color="blue"><b>Restauracja Kulinaria.pl Zaprasza!</b></font></header>
+            <div class="content">
+                <section align="center"><h3><b>Dania mięsne zamówisz już od 30zł!</b></h3><img src="menu.jpg" width="200px" alt="pyszne spagetti"></section>
+                <aside align="center"><h3><b>Przekąski</b></h3><h4>9 owoce morza 20</h4><h4>10, Grzybki,warzywka,sos 15</h4><h4>11 orzechy i chipsy 10</h4><h4>12 tatar i jajo 15</h4><h4>13 bukiet warzywny 10</h4></aside>
+                <nav align="center"><h3><b>Napoje</b></h3><h4>14 sok porzeczkowy 3</h4><h4>15 cola 3</h4><h4>16 woda 2</h4></nav>
+            </div>
+            <footer><font color="blue">Stronę internetową opracował: <i>00000000000</i></font></footer>
+        </div>
+    </body>
+</html>
