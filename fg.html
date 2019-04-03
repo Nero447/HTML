@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Strona w JS</title>
+        <style>
+          #error_msg {
+            color: red;
+            width: 80%;
+            border:1px solid red;
+            padding: 0.25em;
+            display:none;
+          }
+        </style>
+        <script>
+          function zapisz() {
+            let e = document.forms[0];
+            let dorosli = e.dorosli.value.trim();
+            let dzieci = e.dzieci.value.trim();
+            let dni = e.dni.value.trim();
+            if(dorosli > 0) {
+              if(dzieci > 0) {}
+               if (dni > 0) {
+                 let a = (35*dorosli+25*dzieci)*dni;
+                 document.getElementById("a").innerHTML=""+a+"";
+
+              err.style.display = "block";
+              a.style.display ="block"
+              }
+             else {
+              let err = document.getElementById("error_msg");
+              err.style.display = "none";
+              console.log(dorosli);
+              console.log(dzieci);
+              console.log(dni);
+              console.log(a);
+            }
+          }
+        }
+
+        </script>
+    </head>
+    <body>
+      <form method="POST" action="#" name="welcome">
+          <p>Podaj liczbę dorosłych:<input oninput="zapisz()" type="number" name="dorosli" /></p>
+          <p>Podaj liczbę dzieci:<input oninput="zapisz()" type="number" name="dzieci" /></p>
+          <p>Podaj liczbę dni:<input oninput="zapisz()" type="number" name="dni" /></p>
+          <p id=a></p>
+          <p id="error_msg">Podałeś błędne dane</p>
+          <input type=button value="Wyslij dane" onclick="zapisz()">
+
+      </form>
+    </body>
+</html>
