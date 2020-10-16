@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    
+    <h2>Sklep JDkomp.pl</h2>
+    <div id="box">
+    <div id="left">
+    
+        <form>
+            <table>
+                <tr>
+                    <th>Zaznacz</th>
+                    <th>Obraz</th>
+                    <th>Produkt</th>
+                    <th>Cena</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="649">
+                    </td>
+                    <td>
+                        <img id="pr" src="plyta.png">
+                    </td>
+                    <td>Płyta główna</td>
+                    <td>649 zł</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="29">
+                    </td>
+                    <td>
+                        <img id="pr" src="pendrive.jpg">
+                    </td>
+                    <td>PenDrive</td>
+                    <td>29 zł</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="19">
+                    </td>
+                    <td>
+                        <img id="pr" src="cd.jpg">
+                    </td>
+                    <td>Płyta CD</td>
+                    <td>19 zł</td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="139">
+                    </td>
+                    <td>
+                        <img id="pr" src="klawiatura.jpg">
+                    </td>
+                    <td>Klawiatura</td>
+                    <td>139 zł</td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="1499">
+                    </td>
+                    <td>
+                        <img id="pr" src="monitor.jpg">
+                    </td>
+                    <td>Monitor</td>
+                    <td>1499 zł</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="order" value="2499">
+                    </td>
+                    <td>
+                        <img id="pr" src="karta.jpg">
+                    </td>
+                    <td>Karta Graficzna</td>
+                    <td>2499 zł</td>
+                </tr>
+            </table>
+    </div>
+        </form>
+
+    <div id="right">
+    <legend>Wybierz kuriera</legend><br>
+    <select id="kurier">
+        <option>UPS</option>
+        <option>Szmulska Poczta Polska</option>
+        <option>DPD</option>
+        <option>DHL</option>
+        
+        
+    </select>
+    <hr>
+        <legend>Rabat</legend><br>
+        <input type="radio" value="10" name="radio" checked=""> Bonifikata 10% <br>
+        <input type="radio" value="20" name="radio"> Bonifikata 20% <br>
+        <input type="radio" value="30" name="radio"> Bonifikata 30% <br>
+
+    <hr>
+
+    <input  type="button" onclick="totalIt()" value="SUMA"><br>
+
+    </div> 
+    </div>
+    <div id="dol">
+    <h3>Podsumowanie:</h3>
+    <p>Cena:</p>
+    <input value="0" readonly="readonly" type="text" name="total" />
+    <hr>
+    <div id="licznik"></div><br>
+    <div id="wybor"></div><br>
+    <div id="dostawa2"></div>
+    </div>  
+        <script>
+        function totalIt () {
+            var input = document.getElementsByName("order");
+            var total = 0;
+            var licznik=0;
+            var bonus;
+            var radioButtons = document.getElementsByName("radio");
+            
+
+            for (var i = 0; i < radioButtons.length; i++)
+            {
+                if(radioButtons[i].checked == true)
+                bonus=parseInt(radioButtons[i].value);
+            }
+
+            for (var i = 0;  i < input.length; i++) {
+                if (input[i].checked) {
+                    total += parseFloat(input[i].value);
+                    licznik++;
+                }
+            }
+
+        total=total-(total*bonus/100);
+
+            document.getElementsByName("total")[0].value = total
+            document.getElementById("licznik").innerHTML="Wybrałeś "+licznik+ " przedmioty";
+
+            if (total>200) {
+                document.getElementById("dostawa2").innerText = "Dostawa od 200 zł jest darmowa";
+            }
+            else {
+                document.getElementById("dostawa2").innerText = "Dostawa poniżej 200 zł kosztuje 20 zł, razem : " + (total + 20);    }
+
+
+                var e = document.getElementById("kurier");
+                var strUser = e.options[e.selectedIndex].text;
+
+                document.getElementById("wybor").innerHTML ="Wybrales kuriera : " + strUser;
+            }
+        </script>
+    </body>
+</html>

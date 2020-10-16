@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    border: solid 7px blue; 
+    text-align: center;
+    width: 566px;
+}
+
+table, td, tr, th {
+    border: solid 5px blueviolet;
+    height: 50px;
+    width: 50px;
+}
+table {
+    margin: 0 auto;
+}
+
+th,
+tr {
+    width: 100px;
+    text-align: center;
+}
+
+#box {
+    display: flex;
+}
+
+#left,
+#right {
+    width: 50%;
+}
+
+#left {
+    background-color: cyan;
+    padding: 5px;
+    width: 300px;
+
+}
+
+#right {
+    background-color: lightblue;
+    padding: 10px;
+    width: 250px;
+}
+
+#dol {
+    background-color: lightskyblue;
+    padding: 10px;
+    width: 560px;
+}
+
+#pr {
+    height: 45px;
+    width: 45px;
+}
+
